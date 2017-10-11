@@ -1,6 +1,8 @@
 # Permission
 Library, BaseActivty 사용한 권한 설정
 
+
+
 ### BaseActivty로 사용
 ```java
 // 추상 클래스로 MainActivty에서 상속받도록 한다
@@ -96,8 +98,7 @@ public static CheckPermission getInstance(){
     }
     return permission;
 }
-```
-```java
+
 public void checkVersion(Activity activity){
     // 버전이 마시멜로 미만인 경우는 패스
     if(Build.VERSION.SDK_INT < Build.VERSION_CODES.M){
@@ -128,9 +129,7 @@ private void checkAlreadyGrantedPermission(Activity activity) {
         activity.requestPermissions(permissions, REQ_CODE);
     }
 }
-```
 
-```java
 /**
  * 시스템 권한체크가 끝난 후 호출
  */
